@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Delegate\" />
     <Folder Include="Async\" />
     <Folder Include="BitwiseShifting\" />
     <Folder Include="LambdaExpression\" />
@@ -14,13 +13,13 @@
     <Folder Include="Dynamic\" />
     <Folder Include="ExtensionMethod\" />
     <Folder Include="Indexer\" />
-    <Folder Include="DataStructure\" />
     <Folder Include="ExceptionHandling\" />
     <Folder Include="FileOperation\" />
     <Folder Include="Iteration\" />
     <Folder Include="Linq\" />
     <Folder Include="MetaProgramming\" />
     <Folder Include="Events\" />
+    <Folder Include="PatternMatching\" />
     <Folder Include="String\" />
     <Folder Include="TypeCasting\" />
     <Folder Include="Reflaction\" />
