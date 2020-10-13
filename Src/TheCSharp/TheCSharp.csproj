@@ -10,7 +10,6 @@
     <Folder Include="BitwiseShifting\" />
     <Folder Include="LambdaExpression\" />
     <Folder Include="Generic\" />
-    <Folder Include="Dynamic\" />
     <Folder Include="ExtensionMethod\" />
     <Folder Include="Indexer\" />
     <Folder Include="ExceptionHandling\" />
@@ -18,7 +17,6 @@
     <Folder Include="Iteration\" />
     <Folder Include="Linq\" />
     <Folder Include="MetaProgramming\" />
-    <Folder Include="Events\" />
     <Folder Include="PatternMatching\" />
     <Folder Include="String\" />
     <Folder Include="TypeCasting\" />
