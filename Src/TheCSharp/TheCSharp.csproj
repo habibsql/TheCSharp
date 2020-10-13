@@ -22,7 +22,6 @@
     <Folder Include="ParallelProgramming\" />
     <Folder Include="RegularExpression\" />
     <Folder Include="OOP\" />
-    <Folder Include="Pointer\" />
     <Folder Include="Nullable\" />
     <Folder Include="OperatorOverloading\" />
   </ItemGroup>
