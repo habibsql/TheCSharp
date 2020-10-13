@@ -6,14 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Async\" />
     <Folder Include="BitwiseShifting\" />
     <Folder Include="LambdaExpression\" />
     <Folder Include="Generic\" />
     <Folder Include="ExtensionMethod\" />
     <Folder Include="Indexer\" />
     <Folder Include="ExceptionHandling\" />
-    <Folder Include="FileOperation\" />
     <Folder Include="Iteration\" />
     <Folder Include="Linq\" />
     <Folder Include="MetaProgramming\" />

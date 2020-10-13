@@ -1,4 +1,6 @@
-﻿- Main reason is One class should share with multiple files
+﻿###########################################################################
+
+- Main reason is One class should share with multiple files
 - 2 types of partial
 	1) Partial Class
 	2) Partial Method
@@ -10,3 +12,5 @@
 - Partial method must be return void
 - Partial method shold not be contain acces modifier
 - Partial method first declare then write its implementation (previous c/c++ function/method)
+
+###########################################################################
