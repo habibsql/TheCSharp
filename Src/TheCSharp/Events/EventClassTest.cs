@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using Xunit;
 
@@ -13,8 +14,13 @@ namespace TheCSharp.Events
 
         public EventClassTest()
         {
-            employeeService = new EmployeeService();
-            accountService = new AccountService(employeeService);
+            accountService = new AccountService();
+            employeeService = new EmployeeService(accountService);
+
+            employeeService.AccountLockedEvent += delegate (string employeeId, string employeeName)
+            {
+                Debug.WriteLine($"Locked Employee Name={employeeName}");
+            };
         }
 
         [Fact]
@@ -22,9 +28,9 @@ namespace TheCSharp.Events
         {
             string employeeId = "E001";
 
-            string result = employeeService.ResigneEmployee(employeeId);
+            bool succeed = employeeService.ResigneEmployee(employeeId);
 
-            result.Should().Be("LOCKED");
+            succeed.Should().Be(true);
         }
     }
 }

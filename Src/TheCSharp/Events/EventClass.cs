@@ -8,39 +8,45 @@ namespace TheCSharp.Events
     public class EmployeeService
     {
         // declaring delegate and event
-        public delegate string ResignDelegate(string employeeId);
-        public event ResignDelegate EmployeeResigned;
+        public delegate void AccountLockedDelegate(string employeeId, string employeeName);
+        public event AccountLockedDelegate AccountLockedEvent;
+        private readonly AccountService accountService;
 
-        public string ResigneEmployee(string employeeId)
+        public EmployeeService(AccountService accountService)
+        {
+            this.accountService = accountService;
+        }
+
+        public bool ResigneEmployee(string employeeId)
         {
             Debug.WriteLine($"Resign Employee={employeeId}");
 
-           string status = EmployeeResigned(employeeId);
+            bool accountLocked = accountService.LockEmployeeAccount(employeeId);
 
-            return status;
-        }       
+            if (accountLocked && AccountLockedEvent != null)
+            {
+                AccountLockedEvent(employeeId, $"Mr.{employeeId}");
+            }
+
+            return true;
+        }
     }
 
+    /// <summary>
+    /// Employee Account Service
+    /// </summary>
     public class AccountService
     {
-        private readonly EmployeeService employeeService;
-
-        public AccountService(EmployeeService employeeService)
-        {
-            this.employeeService = employeeService;
-            this.employeeService.EmployeeResigned += OnLockEmployeeAccount;
-        }
-
         /// <summary>
-        /// Employee resign event handler
+        /// Employee Account lock 
         /// </summary>
         /// <param name="employeeId"></param>
         /// <returns></returns>
-        public string OnLockEmployeeAccount(string employeeId)
+        public bool LockEmployeeAccount(string employeeId)
         {
             Debug.WriteLine($"Locked Employee={employeeId}");
 
-            return "LOCKED";
+            return true;
         }
     }
 }
