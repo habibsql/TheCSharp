@@ -25,5 +25,21 @@ namespace TheCSharp.Delegate
 
             consultantsTotalSalary.Should().Be(200);
         }
+
+        [Fact]
+        public void ShouldReturnDirectorsSalaryUsingBuiltinDelegate()
+        {
+            int directorsTotalSalary = delegateObject.GetTotalSalaryAmountUsingFuncBuitinDelegate(2);
+
+            directorsTotalSalary.Should().Be(300);
+        }
+
+        [Fact]
+        public void ShouldReturnConsultantsSalaryUsingBuiltinDelegate()
+        {
+            int consultantsTotalSalary = delegateObject.GetTotalSalaryAmountUsingFuncBuitinDelegate(1);
+
+            consultantsTotalSalary.Should().Be(200);
+        }
     }
 }
