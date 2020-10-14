@@ -1,5 +1,7 @@
 ﻿###########################################################################
 
+# Introduced from Version 1 
+
 # Delegate are nothing but function representation (function pointer in c)
 
 # 2 types of delegate i) SingleCast ii) Multicast

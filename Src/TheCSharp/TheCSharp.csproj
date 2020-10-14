@@ -6,21 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BitwiseShifting\" />
-    <Folder Include="LambdaExpression\" />
-    <Folder Include="Generic\" />
-    <Folder Include="ExtensionMethod\" />
-    <Folder Include="Indexer\" />
-    <Folder Include="Iteration\" />
-    <Folder Include="Linq\" />
     <Folder Include="MetaProgramming\" />
     <Folder Include="PatternMatching\" />
-    <Folder Include="String\" />
     <Folder Include="TypeCasting\" />
     <Folder Include="Reflaction\" />
-    <Folder Include="ParallelProgramming\" />
-    <Folder Include="RegularExpression\" />
-    <Folder Include="OOP\" />
+    <Folder Include="Parallel\" />
     <Folder Include="Nullable\" />
   </ItemGroup>
 

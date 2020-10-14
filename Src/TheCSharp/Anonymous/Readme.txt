@@ -1,5 +1,7 @@
 ﻿###########################################################################
 
+# AnonymousType feature is introduced from C# version 3
+
 # Anymonyous means which does not have name. 
 
 # C# has 2 anonymous features
