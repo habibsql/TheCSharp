@@ -1,5 +1,5 @@
 # TheCSharp
-All interesting CSharp language features are demonastrated.
+All interesting CSharp language features are demonastrated:
 1. Anonymous Type/Function
 2. Delegate (SingleCast/Multicast)
 3. Asynchonous Programming
@@ -7,6 +7,11 @@ All interesting CSharp language features are demonastrated.
 5. Partial Class/Method
 6. Exception Handling
 7. Dynamic
-8. Lambda Expression/Expression Tree
+8. Linq/Lambda Expression/Expression Tree
 9. Generics (CoVariance/ContraVariance)
-10. OOP features
+10. Pattern Matching
+11. Indexer
+
+
+Few c# features are described bellow:
+https://www.codeproject.com/Articles/696879/Sexy-Csharp

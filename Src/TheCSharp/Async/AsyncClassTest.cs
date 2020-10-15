@@ -14,15 +14,16 @@ namespace TheCSharp.Async
         private readonly AsyncClass asyncObject = new AsyncClass();
 
         [Fact]
-        public async Task ProcessAsynchronously()
+        public Task ProcessAsynchronously()
         {
             Task task1 = asyncObject.Process1Async();
             Countring();
             Task task2 = asyncObject.Process2Async();
             Countring();
 
-            await task1;
-            await task2;
+            Task.WaitAll(task1, task2); // block the thread untill finish all the executions
+
+            return Task.CompletedTask;
         }
 
         [Fact]
@@ -33,7 +34,6 @@ namespace TheCSharp.Async
             task.Wait();
 
             return Task.CompletedTask;
-
         }
 
         [Fact]
