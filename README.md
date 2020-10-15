@@ -13,5 +13,5 @@ All interesting CSharp language features are demonastrated:
 11. Indexer
 
 
-Few c# features are described bellow:
+Few c# features are described here:
 https://www.codeproject.com/Articles/696879/Sexy-Csharp
