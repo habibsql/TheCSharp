@@ -34,7 +34,7 @@ So many features are available now. But not all features come to its born time. 
 
 Many C# features are borrowed from other popular languages like C++, Java etc.
 
-![features](https://github.com/habibsql/TheCSharp/blob/main/docs/f2.jpg?raw=true)
+![features](https://github.com/habibsql/TheCSharp/blob/main/docs/f2.JPG?raw=true)
 
 
 ## All interesting CSharp language features are demonastrated:
@@ -53,6 +53,5 @@ Many C# features are borrowed from other popular languages like C++, Java etc.
 
 #### Few c# features are described [here](https://www.codeproject.com/Articles/696879/Sexy-Csharp) 
 
-![Feature](https://github.com/habibsql/TheCSharp/blob/main/docs/fu.jpg?raw=true)
 
 
