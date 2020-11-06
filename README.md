@@ -1,7 +1,5 @@
 # TheCSharp
 
-![overview](https://github.com/habibsql/TheCSharp/blob/main/docs/logo.png?raw=true)
-
 * C# is modern, object oriented, typesafe programming language thats popularaties are incresing day by day. 
 * This language is approved European Computer Manufactures Association (ECMA) and International standard organization (ISO). 
 * It is C family language. Other memebers are (C++, Java)
